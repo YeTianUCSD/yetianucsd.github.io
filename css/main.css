@@ -247,7 +247,7 @@ hr {
 
 
 #home { 
-    background: url(../images/background.jpg) no-repeat fixed center;
+    background: url(../images/home_background_beach1.jpg) no-repeat fixed center;
     height: auto;
     width: 100%; 
     margin: 0 0; 
@@ -307,7 +307,7 @@ hr {
 .awards-section {
     height: auto;
     font-size: 16px;
-    background: #ffffff;
+    background: #f7f7f7;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
@@ -316,6 +316,15 @@ hr {
     height: auto;
     font-size: 18px;
     background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+.Miscellaneous-section {
+    height: auto;
+    font-size: 16px;
+    background: #f7f7f7;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
