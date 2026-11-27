@@ -168,7 +168,7 @@ main [id], #site-menu {
 }
 
 .about-section, .news-section, .research-section, .publication-section,
-.awards-section, .education-section, .Miscellaneous-section {
+.awards-section, .service-section, .education-section, .Miscellaneous-section {
   padding: clamp(32px, 4vw, 52px) 0;
 }
 
@@ -208,7 +208,7 @@ main [id], #site-menu {
 
 .news-list li {
   display: grid;
-  grid-template-columns: 60px 1fr;
+  grid-template-columns: 2.5em minmax(0, 1fr);
   gap: 12px;
   align-items: baseline;
 }
@@ -445,10 +445,6 @@ main [id], #site-menu {
   font-weight: 600;
 }
 
-.publication-summary {
-  margin: 9px 0 0;
-}
-
 .paper-links {
   margin-top: 8px;
   font-size: 14px;
@@ -459,13 +455,119 @@ main [id], #site-menu {
   background: var(--wash);
 }
 
-.awards-section hr, .education-section hr, .Miscellaneous-section hr {
+.education-section hr, .Miscellaneous-section hr {
   margin: 14px 0 20px;
   border-color: var(--rule);
 }
 
-.awards-section li + li {
-  margin-top: 3px;
+.service-section {
+  border-block: 1px solid var(--rule);
+}
+
+.honors-grid, .service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 26px clamp(28px, 4.5vw, 56px);
+  margin-top: 25px;
+}
+
+.service-grid {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+}
+
+.service-group + .service-group {
+  margin-top: 24px;
+}
+
+.honor-group h3, .service-group h3 {
+  margin: 0 0 8px;
+  padding-top: 12px;
+  border-top: 2px solid #a7bdca;
+  font-size: clamp(20px, 2vw, 24px);
+}
+
+.record-list, .journal-list, .volunteer-list, .service-group p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.record-list li, .journal-list > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 7px 0;
+  line-height: 1.4;
+}
+
+.record-list li + li, .journal-list > div + div {
+  border-top: 1px solid #dde6eb;
+}
+
+.research-honors .record-list {
+  display: grid;
+  gap: 10px;
+}
+
+.research-honors .record-list li {
+  padding: 12px 15px;
+  border: 0;
+  border-left: 3px solid #44728e;
+  background: #fff;
+}
+
+.research-honors strong {
+  color: var(--ink);
+  font: 600 20px/1.25 var(--serif);
+}
+
+.record-year, .record-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.record-year {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.record-note {
+  display: block;
+  margin-top: 2px;
+}
+
+.journal-list > div {
+  grid-template-columns: 6.2em minmax(0, 1fr);
+}
+
+.journal-list dt, .journal-list dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.journal-list dt {
+  color: var(--ink);
+}
+
+.volunteer-list li + li {
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .research-honors {
+    grid-column: 1 / -1;
+  }
+  .research-honors .record-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(28px, 4.5vw, 56px);
+  }
+  .innovation-honors {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+  }
 }
 
 .education-section .item {
@@ -541,6 +643,9 @@ main [id], #site-menu {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+  .honors-grid, .service-grid {
+    grid-template-columns: 1fr;
+  }
   .research-art {
     height: 158px;
   }
@@ -570,6 +675,10 @@ main [id], #site-menu {
 }
 
 @media (max-width: 540px) {
+  .journal-list > div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
   .publication {
     grid-template-columns: 1fr;
     gap: 12px;
