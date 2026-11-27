@@ -297,17 +297,25 @@ main [id], #site-menu {
   flex: 1;
   flex-direction: column;
   align-items: flex-start;
+  container-type: inline-size;
   padding: clamp(15px, 1.7vw, 23px);
 }
 
 .research-card h3 {
   margin-bottom: 11px;
-  font-size: clamp(21px, 2vw, 25px);
+  font-size: 21px;
+  font-size: clamp(17px, 7.1cqi, 24px);
   font-weight: 600;
+  letter-spacing: -.012em;
+  text-wrap: balance;
 }
 
 .research-card h3 a {
   color: var(--ink);
+}
+
+.research-card h3 span {
+  display: block;
 }
 
 .research-projects {
@@ -450,16 +458,37 @@ main [id], #site-menu {
   background: var(--wash);
 }
 
+.award-groups {
+  margin-top: 20px;
+}
+
+.award-group {
+  display: grid;
+  grid-template-columns: minmax(200px, 24%) minmax(0, 1fr);
+  align-items: baseline;
+  column-gap: 26px;
+}
+
+.award-group + .award-group {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+
+.award-group h3 {
+  font-size: 20px;
+}
+
 .awards-list {
-  margin: 18px 0 0;
-  padding-left: 1.35em;
+  margin: 0;
+  padding-left: 1.2em;
 }
 
 .awards-list li + li {
   margin-top: 4px;
 }
 
-.education-section hr, .Miscellaneous-section hr {
+.Miscellaneous-section hr {
   margin: 14px 0 20px;
   border-color: var(--rule);
 }
@@ -474,10 +503,6 @@ main [id], #site-menu {
   align-items: start;
   gap: 26px clamp(28px, 4.5vw, 56px);
   margin-top: 25px;
-}
-
-.service-group + .service-group {
-  margin-top: 24px;
 }
 
 .service-group h3 {
@@ -535,22 +560,65 @@ main [id], #site-menu {
   color: var(--ink);
 }
 
-.education-section .item {
-  min-height: 125px;
-  padding-bottom: 15px;
+.education-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.edu-img {
-  max-width: 200px;
-  margin: 0 auto;
+.education-list li + li {
+  border-top: 1px solid var(--rule);
 }
 
-.edu {
-  padding-bottom: 10px;
+.education-entry {
+  display: grid;
+  grid-template-columns: 136px minmax(0, 1fr) auto;
+  grid-template-areas: "logo school period";
+  align-items: center;
+  gap: 6px clamp(18px, 2.5vw, 34px);
+  padding: 10px 0;
+  color: var(--body-text);
 }
 
-.date {
+.education-entry:hover, .education-entry:focus {
+  color: var(--body-text);
+  text-decoration: none;
+}
+
+.education-logo {
+  grid-area: logo;
+  display: block;
+  width: 100%;
+  height: 46px;
+  object-fit: contain;
+}
+
+.education-details {
+  grid-area: school;
+}
+
+.education-details strong {
+  display: block;
+  color: var(--link);
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.education-entry:hover strong, .education-entry:focus strong {
+  text-decoration: underline;
+}
+
+.education-period {
+  grid-area: period;
+  justify-self: end;
   color: var(--muted);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.education-period time {
+  white-space: nowrap;
 }
 
 .footer {
@@ -611,6 +679,10 @@ main [id], #site-menu {
   .service-grid {
     grid-template-columns: 1fr;
   }
+  .award-group {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
   .research-art {
     height: 158px;
   }
@@ -624,22 +696,33 @@ main [id], #site-menu {
   .publication-figure {
     height: 88px;
   }
-  .education-section .item {
-    min-height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .research-grid {
+    grid-template-columns: 1fr;
   }
-  .education-section .item + .item {
-    margin-top: 20px;
+  .research-card {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
   }
-  .education-section .edu-img {
-    display: inline-block;
-    width: auto;
-    max-width: 155px;
-    max-height: 42px;
-    margin: 0 8px 7px 0;
+  .research-art {
+    height: 126px;
+    border-right: 1px solid #e0e8ec;
+    border-bottom: 0;
   }
 }
 
 @media (max-width: 540px) {
+  .education-entry {
+    grid-template-columns: 130px minmax(0, 1fr);
+    grid-template-areas: "logo period" "school school";
+    column-gap: 12px;
+  }
+  .education-logo {
+    height: 36px;
+    object-position: left center;
+  }
   .venue-list > div {
     grid-template-columns: 1fr;
     gap: 2px;
