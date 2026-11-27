@@ -138,6 +138,19 @@ main [id], #site-menu {
   margin-top: 19px;
 }
 
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: .38em;
+  white-space: nowrap;
+}
+
+.profile-links svg {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+}
+
 .profile-links a, .research-projects a, .paper-links a {
   font-weight: 600;
   text-decoration: underline;
@@ -274,6 +287,11 @@ main [id], #site-menu {
   object-fit: contain;
 }
 
+.research-art.image-popup-no-margins {
+  padding: 5px;
+  cursor: zoom-in;
+}
+
 .research-card-body {
   display: flex;
   flex: 1;
@@ -298,6 +316,7 @@ main [id], #site-menu {
 }
 
 .research-projects {
+  column-gap: 10px;
   margin-top: auto;
   font-size: 15px;
 }

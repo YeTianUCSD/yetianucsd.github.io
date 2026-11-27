@@ -66,11 +66,46 @@
           <p class="profile-role">Ph.D. Candidate in Computer Science</p>
           <p class="profile-affiliation">University of California San Diego <span aria-hidden="true">·</span> <a href="https://seelab.ucsd.edu/">SEE Lab</a></p>
           <ul class="profile-links">
-            <li><a href="Ye_Tian_CV_UCSD.pdf">CV <span class="file-type">PDF</span></a></li>
-            <li><a href="https://scholar.google.com/citations?hl=en&amp;user=P3hRr2wAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a></li>
-            <li><a href="https://github.com/YeTianUCSD">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/ye-tian-074ba02a8/">LinkedIn</a></li>
-            <li><a href="mailto:yet002@ucsd.edu">Email</a></li>
+            <li>
+              <a href="Ye_Tian_CV_UCSD.pdf">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="#bc443b" d="M5 2h9l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 1-2Z"/>
+                  <path fill="#f4b2a9" d="M14 2v6h6Z"/>
+                  <path d="M8 12h8m-8 4h6" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+                <span>CV <span class="file-type">PDF</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?hl=en&amp;user=P3hRr2wAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="#4285f4" d="M12 1 0 10.5 12 20l12-9.5Z"/>
+                  <path fill="#3067c6" d="M12 1v19l12-9.5Z"/>
+                  <circle cx="12" cy="16.5" r="6.5" fill="#75a7fa"/>
+                  <path fill="#a5c7ff" d="M5.5 16.5a6.5 6.5 0 0 1 13 0Z"/>
+                </svg>
+                <span>Google Scholar</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ye-tian-074ba02a8/">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <rect x="1" y="1" width="22" height="22" rx="3" fill="#0a66c2"/>
+                  <circle cx="6.8" cy="6.8" r="1.7" fill="#fff"/>
+                  <path fill="#fff" d="M5.3 9.6h3v9.6h-3zm5 0h2.9v1.3c.6-1 1.7-1.6 3-1.6 2.4 0 3.5 1.4 3.5 4.1v5.8h-3v-5.3c0-1.4-.5-2.1-1.6-2.1-1.2 0-1.8.8-1.8 2.3v5.1h-3Z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:yet002@ucsd.edu">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <rect x="1" y="4" width="22" height="16" rx="3" fill="#21766c"/>
+                  <path d="m3.5 7 7.4 5.7a1.8 1.8 0 0 0 2.2 0L20.5 7" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Email</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -125,25 +160,27 @@
               <ul class="research-projects">
                 <li><a href="#paper-lifeagentbench">LifeAgentBench</a></li>
                 <li><a href="#paper-dailyllm">DailyLLM</a></li>
+                <li><a href="#paper-egopva">EgoPVA</a></li>
               </ul>
             </div>
           </article>
           <article class="research-card">
             <a class="research-art" href="#pub-spatial" aria-label="Browse papers in 3D Perception &amp; Spatial Reasoning">
-              <img src="images/overview-spatial.webp" loading="lazy" alt="Multi-view camera images and a LiDAR point cloud from the KLDrive system overview.">
+              <img src="images/kroma-context-reuse.webp" loading="lazy" alt="KROMA retrieves detector states for different weather, lighting, and road conditions.">
             </a>
             <div class="research-card-body">
               <h3><a href="#pub-spatial">3D Perception &amp; Spatial Reasoning</a></h3>
               <p>I build models that fuse sensor observations, adapt as driving conditions change, and answer spatial questions about a scene.</p>
               <ul class="research-projects">
+                <li><a href="#paper-kroma">KROMA</a></li>
                 <li><a href="#paper-kldrive">KLDrive</a></li>
                 <li><a href="#paper-dronefl">DroneFL</a></li>
               </ul>
             </div>
           </article>
           <article class="research-card">
-            <a class="research-art" href="#pub-systems" aria-label="Browse papers in Efficient Learning &amp; Inference Systems">
-              <img src="images/overview-systems.webp" loading="lazy" alt="Six Jetson and Raspberry Pi workers connected through a router and switch in the LEDGE simulator.">
+            <a class="research-art image-popup-no-margins" href="images/ledge-system-overview.png" aria-label="Enlarge the LEDGE distributed inference diagram">
+              <img src="images/ledge-system-overview.png" width="972" height="636" loading="lazy" alt="LEDGE simulates how model placement, request routing, and shared network links affect inference latency across edge devices.">
             </a>
             <div class="research-card-body">
               <h3><a href="#pub-systems">Efficient Learning &amp; Inference Systems</a></h3>
@@ -151,6 +188,8 @@
               <ul class="research-projects">
                 <li><a href="#paper-hyperlidar">HyperLiDAR</a></li>
                 <li><a href="#paper-ledge">LEDGE</a></li>
+                <li><a href="#paper-fhdnn">FHDnn</a></li>
+                <li><a href="#paper-suphdc">SupHDC</a></li>
               </ul>
             </div>
           </article>
@@ -211,11 +250,11 @@
           </article>
 
           <article class="publication" id="paper-contextllm">
-            <a class="publication-figure image-popup-no-margins" href="images/Paper_ContexLLM.jpg" aria-label="Enlarge figure for Poster Abstract: Fine-grained Contextualized Activity Logs Generation based on Multi-Modal Sensor Data and LLM">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_ContexLLM.jpg" aria-label="Enlarge figure for Fine-grained Contextualized Activity Logs Generation based on Multi-Modal Sensor Data and LLM">
               <img src="images/Paper_ContexLLM.jpg" width="1098" height="576" loading="lazy" decoding="async" alt="ContextLLM converts spatial, motion, environmental, and physiological features into activity logs.">
             </a>
             <div class="publication-body">
-              <h4><a href="https://doi.org/10.1145/3715014.3724031">Poster Abstract: Fine-grained Contextualized Activity Logs Generation based on Multi-Modal Sensor Data and LLM</a></h4>
+              <h4><a href="https://doi.org/10.1145/3715014.3724031">Fine-grained Contextualized Activity Logs Generation based on Multi-Modal Sensor Data and LLM</a></h4>
               <p class="publication-authors"><strong>Ye Tian</strong>, Onat Gungor, Xiaofan Yu, Tajana Rosing</p>
               <p class="publication-venue">ACM SenSys 2025 · Poster</p>
               <p class="publication-summary">ContextLLM aligns mobile and wearable sensor signals and translates them into prompts for a language model that writes fine-grained activity logs.</p>
@@ -240,10 +279,34 @@
               </ul>
             </div>
           </article>
+
+          <article class="publication" id="paper-egopva">
+            <a class="publication-figure image-popup-no-margins" href="images/egopva-overview.webp" aria-label="Enlarge figure for EgoPVA: When and Where Must We Look? Benchmarking Precise Visual Attention on Egocentric AI Glasses">
+              <img src="images/egopva-examples.webp" width="753" height="286" loading="lazy" decoding="async" alt="First-person examples of precise visual attention and the two-stage detection and localization task.">
+            </a>
+            <div class="publication-body">
+              <h4>EgoPVA: When and Where Must We Look? Benchmarking Precise Visual Attention on Egocentric AI Glasses</h4>
+              <p class="publication-authors">Yuhong Zhang, <strong>Ye Tian</strong>, Guanhua Chen, Anthony L. Hu, Tiantian Xie, Ci-Jun Gao, Elina Wang, Jie Cui, Yuchen Xu, Lalith Kumar Sree Datta Sasubilli, Ying Choon Wu, Derek F. Wong, Tajana Rosing, Gert Cauwenberghs, Tzyy-Ping Jung</p>
+              <p class="publication-venue">Manuscript</p>
+              <p class="publication-summary">EgoPVA evaluates whether a vision-language model can identify the steps that require close inspection and pinpoint the object detail the wearer needs to see.</p>
+            </div>
+          </article>
         </section>
 
         <section class="publication-group" id="pub-spatial" aria-labelledby="title-spatial">
           <h3 id="title-spatial">3D Perception &amp; Spatial Reasoning</h3>
+          <article class="publication" id="paper-kroma" data-highlight>
+            <a class="publication-figure image-popup-no-margins" href="images/kroma-overview.webp" aria-label="Enlarge figure for KROMA: Knowledge-Retaining Online Multimodal Adaptation for 3D Object Detection in Changing Driving Conditions">
+              <img src="images/kroma-context-reuse.webp" width="793" height="366" loading="lazy" decoding="async" alt="Camera, LiDAR, and radar observations feed context discovery, detector adaptation, and selective state retention.">
+            </a>
+            <div class="publication-body">
+              <h4>KROMA: Knowledge-Retaining Online Multimodal Adaptation for 3D Object Detection in Changing Driving Conditions</h4>
+              <p class="publication-authors"><strong>Ye Tian</strong>, Md Mizanur Rahaman Nayan, Quanling Zhao, Tianqi Zhang, Flavio Ponzina, Azad Naeemi, Tajana Rosing</p>
+              <p class="publication-venue">Manuscript</p>
+              <p class="publication-summary">KROMA adapts a camera–LiDAR–radar detector as weather, roads, and lighting change. Retrieving earlier detector states when a context returns improved 3D average precision at IoU 0.5 by 9.92 percentage points over the strongest baseline across ten K-Radar driving conditions.</p>
+            </div>
+          </article>
+
           <article class="publication" id="paper-kldrive" data-highlight>
             <a class="publication-figure image-popup-no-margins" href="images/Paper_KLDrive.jpg" aria-label="Enlarge figure for KLDrive: Fine-Grained 3D Scene Reasoning for Autonomous Driving based on Knowledge Graph">
               <img src="images/Paper_KLDrive.jpg" width="714" height="524" loading="lazy" decoding="async" alt="KLDrive combines multi-view cameras and LiDAR into a scene graph for a tool-using language model.">
