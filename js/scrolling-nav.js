@@ -1,19 +1,16 @@
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
+// Native fragment links keep deep links and the browser's Back button working.
+// Fixed-header spacing and reduced-motion preferences are handled in CSS.
+$(function () {
+  var menu = $('#site-menu');
+  var toggle = $('.navbar-toggle');
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  menu.on('show.bs.collapse hide.bs.collapse', function (event) {
+    toggle.attr('aria-expanded', event.type === 'show' ? 'true' : 'false');
+  });
+
+  menu.on('click', 'a', function () {
+    if (menu.hasClass('in')) {
+      menu.collapse('hide');
+    }
+  });
 });

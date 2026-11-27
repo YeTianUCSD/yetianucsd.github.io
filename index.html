@@ -1,32 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="yetianucsd.github.io : ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Ye Tian">
-    
-    <link rel="stylesheet" href="css/main.css">
-    <!--    
+    <meta name="description" content="Ye Tian is a Ph.D. candidate in Computer Science at UC San Diego studying multimodal AI, LLM agents, 3D perception, and efficient learning and inference.">
+    <title>Ye Tian | Computer Science, UC San Diego</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <!--
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-navbar-custom.css">
-    <link rel="stylesheet" href="css/scrolling-nav.css">
     <link rel="stylesheet" href="css/mfp.css">
-	<link rel="stylesheet" href="css/academicons.min.css"/>
-
-    
+    <link rel="stylesheet" href="css/main.css">
     <script>
+      if (location.hostname === 'yetianucsd.github.io') {
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -34,439 +19,472 @@
 
       ga('create', 'UA-45156688-2', 'auto');
       ga('send', 'pageview');
+      }
     </script>
-
-    <title>Ye Tian</title>
-    </head>
-
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- HEADER -->
-      <div class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-
-          <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toogle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Home</a>
-          </div>
-
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-              <li><a class="page-scroll" href="#about">About</a></li>
-              <li><a class="page-scroll" href="#news">News</a></li>
-              <li><a class="page-scroll" href="#Publications">Publications</a></li>
-              <!--<li><a class="page-scroll" href="#experiences">Experiences</a></li>-->
-              <li><a class="page-scroll" href="#awards">Awards</a></li>
-              <!--<li><a class="page-scroll" href="#project">Projects</a></li>-->
-              <li><a class="page-scroll" href="#education">Education</a></li>
-			  <li><a class="page-scroll" href="#Miscellaneous">Miscellaneous</a></li>
-<!--              <li><a class="page-scroll" href="#activity">Activities</a></li> -->
-            </ul>
-          </div>
-
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="78">
+    <a class="skip-link" href="#research">Skip to research</a>
+    <noscript><style>
+      @media (max-width: 767px) {
+        body { padding-top: 0; }
+        .navbar-fixed-top { position: static; }
+        .navbar-toggle { display: none; }
+        #site-menu.collapse { display: block; }
+        #site-menu ul { display: flex; flex-wrap: wrap; }
+      }
+    </style></noscript>
+    <nav class="navbar navbar-custom navbar-fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#page-top">Ye Tian</a>
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#site-menu" aria-controls="site-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-
+        <div class="navbar-collapse collapse" id="site-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#Publications">Publications</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#Miscellaneous">Miscellaneous</a></li>
+          </ul>
+        </div>
       </div>
-		
-
-    <!-- MAIN CONTENT -->
-    
-    <section id="home" data-speed="0" data-type="home_background_beach1.jpg" class="home-section">
-    
+    </nav>
+    <main>
+    <header id="home" class="home-section">
       <div class="container profile">
-        <div class="row">
-        
-          <div class="col-md-4 col-xs-12 profile-img">
-            <img src="images/YeTian_withCSEbear.JPG" class="img-responsive center-block" alt="Ye Tian portrait" style="width:260px; height:auto;">
-          </div>
-        
-
-          <div class="col-md-6 col-xs-12 profile-info">
-            <div><span class="english-name">Ye Tian</span>
-            <div class="spacer"></div>
-            <div class="info-list">
-              <div>Ph.D. student</div>
-			  <div>Advised by Prof.<a href="https://cseweb.ucsd.edu/~trosing/" target="blank">Tajana Šimunić Rosing</div> 
-              <div><a href="http://varys.ucsd.edu/">UCSD SEE Lab</a></div>
-			        <!--<div><a href="http://www.svcl.ucsd.edu/">Statistical Visual Computing Lab</a></div>-->
-              <!--<div>University of California San Diego, USA</div>-->
-              <!--<div><a href="http://aliensunmin.github.io/lab/info.html">Vision Science Lab</a></div>-->
-              <div class='email'><b>yet002@ucsd.edu</b></div>
-            </div>
-            <div class="social-links">
-			  <a href="https://scholar.google.com/citations?hl=en&user=P3hRr2wAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar-square ai-3x" aria-hidden="true"></i></a>
-              <!--<<a href="https://github.com/gina9726" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>-->			  
-			  <a href="https://www.linkedin.com/in/ye-tian-074ba02a8/" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>			  
-			  <a href="./Ye_Tian_CV_UCSD.pdf" target="_blank"><img src="fonts/pdf-icon.svg" width="46.5px" class="img-icon" style="position:relative;left:-0.8px;top:-15px;"></i></a>
-			  <!--<a href="assets/CV.pdf" target="_blank"><img src="fonts/cv-icon.svg" width="67px" class="img-icon" style="position:relative;left:-11.2px;top:-11.5px;"></i></a>-->
-			  <!--<a href="assets/CV.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x"></i></a>-->
-            </div>
-
-          </div>
+        <img class="portrait" src="images/YeTian_withCSEbear.JPG" width="2592" height="3872" alt="Ye Tian at UC San Diego">
+        <div class="profile-info">
+          <h1>Ye Tian</h1>
+          <p class="profile-role">Ph.D. Candidate in Computer Science</p>
+          <p class="profile-affiliation">University of California San Diego <span aria-hidden="true">·</span> <a href="https://seelab.ucsd.edu/">SEE Lab</a></p>
+          <ul class="profile-links">
+            <li>
+              <a href="Ye_Tian_CV_UCSD.pdf">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="#bc443b" d="M5 2h9l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 1-2Z"/>
+                  <path fill="#f4b2a9" d="M14 2v6h6Z"/>
+                  <path d="M8 12h8m-8 4h6" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+                <span>CV <span class="file-type">PDF</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?hl=en&amp;user=P3hRr2wAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path fill="#4285f4" d="M12 1 0 10.5 12 20l12-9.5Z"/>
+                  <path fill="#3067c6" d="M12 1v19l12-9.5Z"/>
+                  <circle cx="12" cy="16.5" r="6.5" fill="#75a7fa"/>
+                  <path fill="#a5c7ff" d="M5.5 16.5a6.5 6.5 0 0 1 13 0Z"/>
+                </svg>
+                <span>Google Scholar</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ye-tian-074ba02a8/">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <rect x="1" y="1" width="22" height="22" rx="3" fill="#0a66c2"/>
+                  <circle cx="6.8" cy="6.8" r="1.7" fill="#fff"/>
+                  <path fill="#fff" d="M5.3 9.6h3v9.6h-3zm5 0h2.9v1.3c.6-1 1.7-1.6 3-1.6 2.4 0 3.5 1.4 3.5 4.1v5.8h-3v-5.3c0-1.4-.5-2.1-1.6-2.1-1.2 0-1.8.8-1.8 2.3v5.1h-3Z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:yet002@ucsd.edu">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <rect x="1" y="4" width="22" height="16" rx="3" fill="#21766c"/>
+                  <path d="m3.5 7 7.4 5.7a1.8 1.8 0 0 0 2.2 0L20.5 7" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Email</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        
       </div>
-    
-    </section>
-
+    </header>
 
     <section id="about" class="about-section">
-
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 profile-description">
-            <h2>About Me</h2>
-            <hr>
-            <div class="spacer"></div>
-            <p align="justify">
-             I am a second-year Ph.D. student in Computer Science and Engineering (CSE) at <a href="https://ucsd.edu/" target="blank">University of California San Diego (UCSD)</a>, 
-			 advised by ACM/IEEE Fellow Prof. <a href="https://cseweb.ucsd.edu/~trosing/" target="blank">Tajana Šimunić Rosing</a>. 
-			 My recent research focuses on <strong><em>(i)</em></strong> LLMs and agents for healthcare based on multi-modal sensing data, 
-			 <strong><em>(ii)</em></strong> Knowledge graph and LLM-augmented 3D scene understanding and decision making, 
-			 and <strong><em>(iii)</em></strong> Efficient training and inference on resource-constrained devices. 
-			 My current research is supported by JUMP 2.0 Research Centers (<a href="https://cocosys.ece.gatech.edu/" target="blank">CoCoSys</a>, <a href="https://prism.ucsd.edu/" target="blank">PRISM</a>) 
-			 and the NSF National AI Research Institutes (<a href="https://tilos.ai/" target="blank">TILOS</a>).
-			 Before UCSD, I received my M.S. from the University of Science and Technology of China <a href="https://en.ustc.edu.cn/" target="blank">(USTC)</a>, 
-			 advised by ACM/IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=JURtNb0AAAAJ&hl=en&oi=ao" target="blank">Xiang-Yang Li</a>. My interests cover mobile and ubiquitous computing and the design of efficient and secure IoT systems.
-			</p>
-
-			<p align="justify">
-			 I have also been fortunate to collaborate with IEEE Fellow Prof. <a href="https://www.kumarrobotics.org/" target="blank">Vijay Kumar</a>,
-			 IEEE Fellow Prof. <a href="https://imdl.naist.jp/people/hirokazukato/" target="blank">Hirokazu Kato</a>, 
-			 IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=0nrcfZwAAAAJ&hl=en&oi=ao" target="blank">Witold Pedrycz</a>,
-			 IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=3EK_RaQAAAAJ&hl=en" target="blank">Yusheng Ji</a>,
-			 Prof. <a href="https://soar.group/chenren/about-me/" target="blank">Chenren Xu</a>,
-			 Prof. <a href="https://scholar.google.com/citations?user=JMfB4CIAAAAJ&hl=en" target="blank">Hao Zhou</a>,
-			 Prof. <a href="https://scholar.google.com/citations?user=Zuhod6sAAAAJ&hl=en" target="blank">Yong Deng</a>,
-			 Prof. <a href="https://scholar.google.com/citations?user=VIEDOvoAAAAJ&hl=en" target="blank">Bingyi Kang</a>,
-			 Prof. <a href="https://dblp.org/pid/91/7389.html" target="blank">Haohua Du</a>,
-			 and Prof. <a href="https://scholar.google.co.jp/citations?user=z2gblvQAAAAJ&hl=en" target="blank">Jiahui Hou</a>.
-			I am always happy to discuss any interesting ideas and potential collaboration. If you are interested in my research or would like to talk, please feel free to contact me: yet002@ucsd.edu. 
-			More Information: <a href="https://yetianucsd.github.io/Ye_Tian_CV_UCSD.pdf" target="_blank"> My CV [PDF]</a>.
-			</p>
-            
-			
-          </div>
-
-        </div>
-      </div> <!-- end of Description -->
+        <h2>About Me</h2>
+        <p>I am a Ph.D. candidate in Computer Science at the <a href="https://ucsd.edu/">University of California San Diego</a>, advised by ACM/IEEE Fellow Prof. <a href="https://cseweb.ucsd.edu/~trosing/">Tajana Šimunić Rosing</a>. I study multimodal AI, LLM agents, and efficient ML systems. My research is supported by the JUMP 2.0 centers <a href="https://cocosys.ece.gatech.edu/">CoCoSys</a> and <a href="https://prism.ucsd.edu/">PRISM</a>, and by the NSF AI Institute <a href="https://tilos.ai/">TILOS</a>. Before UC San Diego, I earned my M.S. at the <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, advised by ACM/IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=JURtNb0AAAAJ&amp;hl=en&amp;oi=ao">Xiang-Yang Li</a>.</p>
+        <p>
+          I have also been fortunate to collaborate with IEEE Fellow Prof. <a href="https://www.kumarrobotics.org/">Vijay Kumar</a>,
+          IEEE Fellow Prof. <a href="https://isw3.naist.jp/Research/mi-imd-en.html">Hirokazu Kato</a>,
+          IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=0nrcfZwAAAAJ&hl=en&oi=ao">Witold Pedrycz</a>,
+          IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=3EK_RaQAAAAJ&hl=en">Yusheng Ji</a>,
+          Prof. <a href="https://soar.group/chenren/about-me/">Chenren Xu</a>,
+          Prof. <a href="https://scholar.google.com/citations?user=JMfB4CIAAAAJ&hl=en">Hao Zhou</a>,
+          Prof. <a href="https://scholar.google.com/citations?user=Zuhod6sAAAAJ&hl=en">Yong Deng</a>,
+          Prof. <a href="https://scholar.google.com/citations?user=VIEDOvoAAAAJ&hl=en">Bingyi Kang</a>,
+          Prof. <a href="https://dblp.org/pid/91/7389.html">Haohua Du</a>,
+          and Prof. <a href="https://scholar.google.co.jp/citations?user=z2gblvQAAAAJ&hl=en">Jiahui Hou</a>.
+        </p>
+        <p>I welcome research conversations and collaborations. You can reach me at <a href="mailto:yet002@ucsd.edu">yet002@ucsd.edu</a> or find more details in <a href="Ye_Tian_CV_UCSD.pdf">my CV</a>.</p>
+      </div>
     </section>
 
     <section id="news" class="news-section">
-
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>News</h2>
-            <hr>
-            <div class="spacer"></div>
-            <ul>
-	  <li><span class="glyphicon"></span> 07/2026: One paper submitted to <a href="https://aaai.org/conference/aaai/aaai-27/" target="blank">AAAI</a> 2027!</li>		
-	  <li><span class="glyphicon"></span> 07/2026: I was invited to give a talk on <a href="https://cocosys.ece.gatech.edu/" target="blank">CoCoSys</a>.</li>
-	  <li><span class="glyphicon"></span> 03/2026: One paper accepted by <a href="https://dac.com/2026" target="blank">DAC</a> 2026!</li>	
-	  <li><span class="glyphicon"></span> 03/2026: I was invited to attend <a href="https://cocosys.ece.gatech.edu/" target="blank">CoCoSys Annual Review</a> and present a poster.</li>
-      <li><span class="glyphicon"></span> 12/2025: One paper submitted to <a href="https://dac.com/2026" target="blank">DAC</a> 2026!</li>
-	  <li><span class="glyphicon"></span> 11/2025: I was invited to attend <a href="https://prism.ucsd.edu/" target="blank">PRISM Annual Review</a> and present a poster.</li>
-	  <li><span class="glyphicon"></span> 10/2025: I was invited to attend <a href="https://wearablesensors.ucsd.edu/" target="blank">CWS Research Summit</a> and Poster Pitch Competition.</li>
-	  <li><span class="glyphicon"></span> 10/2025: I was invited to give a talk on <a href="https://sites.google.com/view/hdvsaonline" target="blank">VSAONLINE</a>.</li>
-	  <li><span class="glyphicon"></span> 10/2025: Presented our paper at <a href="https://ieeemass2025.github.io/ieeemass2025/" target="blank">MASS</a> 2025.</li>
-	  <li><span class="glyphicon"></span> 09/2025: One paper submitted to <a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra" target="blank">ICRA</a> 2026!</li>
-      <li><span class="glyphicon"></span> 07/2025: One paper accepted by <a href="https://ieeemass2025.github.io/ieeemass2025/" target="blank">MASS</a> 2025!</li>
-      <li><span class="glyphicon"></span> 06/2025: Our work won the Best poster (Top 3) on <a href="https://tilos.ai/tilos-industry-day-2025/" target="blank">TILOS Industry Day</a>!</li>
-	  <li><span class="glyphicon"></span> 05/2025: Presented our paper at <a href="https://sensys.acm.org/2025/" target="blank">SenSys</a> 2025!</li>
-	  <li><span class="glyphicon"></span> 05/2025: One paper published on <a href="https://dl.acm.org/doi/full/10.1145/3724129" target="blank">TIoT</a>!</li>
-      <li><span class="glyphicon"></span> 03/2025: One paper accepted by <a href="https://sensys.acm.org/2025/" target="blank">SenSys</a> 2025!</li>
-            </ul>
-            
-          </div>
-
-        </div>
-      </div> <!-- end of News -->
+        <h2>News <span class="section-year">2026</span></h2>
+        <ul class="news-list">
+          <li><time datetime="2026-11-18">Nov 18</time><span>I passed my Ph.D. qualifying examination at UC San Diego.</span></li>
+          <li><time datetime="2026-11">Nov</time><span>We released <a href="#paper-ledge">LEDGE</a>, our simulator for distributed LLM serving on edge devices.</span></li>
+          <li><time datetime="2026-10">Oct</time><span><a href="#paper-lifeagentbench">LifeAgentBench</a> appeared in the main proceedings of EMNLP 2026.</span></li>
+          <li><time datetime="2026-07-23">Jul 23</time><span>I gave an invited <a href="https://cocosys.ece.gatech.edu/">CoCoSys</a> talk on efficient and adaptive learning for autonomous driving perception.</span></li>
+          <li><time datetime="2026-03">Mar</time><span><a href="#paper-hyperlidar">HyperLiDAR</a> was accepted to DAC 2026.</span></li>
+          <li><time datetime="2026-03">Mar</time><span>I was invited to present a poster at the <a href="https://cocosys.ece.gatech.edu/">CoCoSys Annual Review</a>.</span></li>
+        </ul>
+      </div>
     </section>
 
-
-
-    <section id="Publications" class="Publications-section">
+    <section id="research" class="research-section" aria-labelledby="research-title">
       <div class="container">
-        <h2>Selected Publications</h2>
-        <hr>
-        <div class="spacer"></div>
+        <h2 id="research-title">Research Overview</h2>
+        <p class="research-intro">My research aims to build intelligent systems that can perceive, reason, and adapt efficiently in real-world environments.</p>
+        <div class="research-grid">
+          <article class="research-card">
+            <a class="research-art" href="#pub-agents" aria-label="Browse papers in Multimodal Understanding &amp; LLM Agents">
+              <img src="images/Paper_LifeAgentBench.jpg" loading="lazy" alt="Four lifestyle domains and the evidence-gathering loop of a language agent.">
+            </a>
+            <div class="research-card-body">
+              <h3><a href="#pub-agents">Multimodal Understanding &amp; LLM Agents</a></h3>
+              <p>I study how language agents use tools and multimodal records to answer questions that span days, activities, and people.</p>
+              <ul class="research-projects">
+                <li><a href="#paper-lifeagentbench">LifeAgentBench</a></li>
+                <li><a href="#paper-dailyllm">DailyLLM</a></li>
+                <li><a href="#paper-egopva">EgoPVA</a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="research-card">
+            <a class="research-art" href="#pub-spatial" aria-label="Browse papers in 3D Perception &amp; Spatial Reasoning">
+              <img src="images/kroma-context-reuse.webp" loading="lazy" alt="KROMA retrieves detector states for different weather, lighting, and road conditions.">
+            </a>
+            <div class="research-card-body">
+              <h3><a href="#pub-spatial">3D Perception &amp; Spatial Reasoning</a></h3>
+              <p>I build models that fuse sensor observations, adapt as driving conditions change, and answer spatial questions about a scene.</p>
+              <ul class="research-projects">
+                <li><a href="#paper-kroma">KROMA</a></li>
+                <li><a href="#paper-kldrive">KLDrive</a></li>
+                <li><a href="#paper-dronefl">DroneFL</a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="research-card">
+            <a class="research-art image-popup-no-margins" href="images/ledge-system-overview.png" aria-label="Enlarge the LEDGE distributed inference diagram">
+              <img src="images/ledge-system-overview.png" width="972" height="636" loading="lazy" alt="LEDGE simulates how model placement, request routing, and shared network links affect inference latency across edge devices.">
+            </a>
+            <div class="research-card-body">
+              <h3><a href="#pub-systems">Efficient Learning &amp; Inference Systems</a></h3>
+              <p>I design ways to update models on-device and evaluate how language models can run across heterogeneous edge devices.</p>
+              <ul class="research-projects">
+                <li><a href="#paper-hyperlidar">HyperLiDAR</a></li>
+                <li><a href="#paper-ledge">LEDGE</a></li>
+                <li><a href="#paper-fhdnn">FHDnn</a></li>
+                <li><a href="#paper-suphdc">SupHDC</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-	  <h4>(i) LLMs and agents for healthcare based on multi-modal sensing data</h4>
-		
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_dailyllm.jpg" class="img-thumbnail img-responsive">
+    <section id="Publications" class="publication-section" aria-labelledby="publications-title">
+      <div class="container">
+        <div class="publication-heading">
+          <div>
+            <h2 id="publications-title">Selected Publications</h2>
+            <p class="publication-note">An asterisk (*) denotes equal contribution. <a href="https://scholar.google.com/citations?hl=en&amp;user=P3hRr2wAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Full list on Google Scholar</a></p>
+          </div>
+          <div class="publication-filter" role="group" aria-label="Publication selection" hidden>
+            <button type="button" data-view="all" aria-pressed="true">All <span class="view-count"></span></button>
+            <button type="button" data-view="highlights" aria-pressed="false">Highlights <span class="view-count"></span></button>
+          </div>
+        </div>
+        <p id="publication-status" class="sr-only" aria-live="polite"></p>
+        <section class="publication-group" id="pub-agents" aria-labelledby="title-agents">
+          <h3 id="title-agents">Multimodal Understanding &amp; LLM Agents</h3>
+          <article class="publication" id="paper-lifeagentbench" data-highlight>
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_LifeAgentBench.jpg" aria-label="Enlarge figure for LifeAgentBench: Benchmarking LLMs for Long-Horizon, Cross-Dimensional Lifestyle Health Reasoning">
+              <img src="images/Paper_LifeAgentBench.jpg" width="858" height="466" loading="lazy" decoding="async" alt="LifeAgentBench’s four lifestyle domains and LifeAgent’s tool-based reasoning loop.">
             </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">DailyLLM: Context-Aware Activity Log Generation Using Multi-Modal Sensors and LLMs</div>
-            <div class="author"><b>Ye Tian</b>, Xiaoyuan Ren, Zihao Wang, Onat Gungor, Xiaofan Yu, Tajana Rosing</div>
-            <div class="conf">The 22nd IEEE International Conference on Mobile Ad-Hoc and Smart Systems <b>(MASS)</b>, 2025</div>
-            <div>
-              [
-			  <a href="https://gdfwj.github.io/DailyLLM/" target="_blank">Website</a> |
-              <a href="https://arxiv.org/pdf/2507.13737" target="_blank">Paper</a> |
-			  <a href="https://huggingface.co/datasets/YeTianCS/DailyLLMDataset" target="_blank">Dataset</a> |
-			  <a href="https://github.com/gdfwj/DailyLLM" target="_blank">Code</a>
-               ]
+            <div class="publication-body">
+              <h4><a href="https://aclanthology.org/2026.emnlp-main.746/">LifeAgentBench: Benchmarking LLMs for Long-Horizon, Cross-Dimensional Lifestyle Health Reasoning</a></h4>
+              <p class="publication-authors"><strong>Ye Tian</strong><sup>*</sup>, Zihao Wang<sup>*</sup>, Onat Gungor, Xiaoran Fan, Tajana Rosing</p>
+              <p class="publication-venue">EMNLP 2026</p>
+              <p class="publication-summary">We built a 22,573-question benchmark and evaluated 13 LLMs on reasoning across longitudinal lifestyle records. Our LifeAgent baseline breaks down complex questions, retrieves the relevant evidence, and uses tools to compute verifiable answers.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://aclanthology.org/2026.emnlp-main.746/">Paper</a></li>
+                <li><a href="https://gdfwj.github.io/LifeAgentBench/">Project</a></li>
+                <li><a href="https://github.com/gdfwj/LifeAgentBench">Code</a></li>
+                <li><a href="https://huggingface.co/datasets/gdfwj/LifeAgentBench">Dataset</a></li>
+              </ul>
             </div>
-            <div class="tag">
-			  <span class="label label-warning">LLM</span>
-			  <span class="label label-primary">Embedded system</span>
-			  <span class="label label-success">Healthcare</span>
-			 
-            </div>
-          </div>
-	</div>
-   
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_LifeAgentBench.jpg" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">LifeAgentBench: A Multi- dimensional Benchmark and Agent for Personal Health Assistants in Digital Health</div>
-            <div class="author"><b>Ye Tian*</b>, Zihao Wang*, Onat Gungor, Xiaoran Fan, Tajana Rosing (* indicates equal contribution)</div>
-            <div class="conf">Empirical Methods in Natural Language Processings <b>(EMNLP under review)</b>, 2026</div>
-            <div>
-              [
-              <a href="https://arxiv.org/pdf/2601.13880" target="_blank">Paper</a> |
-			  <a href="" target="_blank">Dataset</a> |
-			  <a href="" target="_blank">Code</a>
-               ]
-            </div>
-            <div class="tag">
-			  <span class="label label-warning">LLM</span>
-			  <span class="label label-success">Healthcare</span>
-			 
-            </div>
-          </div>
-	</div>
-	
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_ContexLLM.jpg" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">Fine-grained Contextualized Activity Logs Generation based on Multi-Modal Sensor Data and LLM</div>
-            <div class="author"><b>Ye Tian</b>, Onat Gungor, Xiaofan Yu, Tajana Rosing</div>
-            <div class="conf">The ACM Conference on Embedded Networked Sensor Systems <b>(SenSys)</b>, 2025</div>
-            <div>
-              [
-              <a href="https://dl.acm.org/doi/10.1145/3715014.3724031" target="_blank">Paper</a> 
-               ]
-            </div>
-            <div class="tag">
-               <span class="label label-warning">LLM</span>
-			  <span class="label label-primary">Embedded system</span>
-			  <span class="label label-success">Healthcare</span>
-            </div>
-          </div>
-	</div>
+          </article>
 
-<h4>(ii) 3D scene understanding and decision making</h4>
+          <article class="publication" id="paper-dailyllm" data-highlight>
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_dailyllm.jpg" aria-label="Enlarge figure for DailyLLM: Context-Aware Activity Log Generation Using Multi-Modal Sensors and LLMs">
+              <img src="images/Paper_dailyllm.jpg" width="604" height="396" loading="lazy" decoding="async" alt="A phone and smartwatch provide context for an activity log and daily summary.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1109/MASS66014.2025.00060">DailyLLM: Context-Aware Activity Log Generation Using Multi-Modal Sensors and LLMs</a></h4>
+              <p class="publication-authors"><strong>Ye Tian</strong>, Xiaoyuan Ren, Zihao Wang, Onat Gungor, Xiaofan Yu, Tajana Rosing</p>
+              <p class="publication-venue">IEEE MASS 2025</p>
+              <p class="publication-summary">A 1.5B-parameter model turns phone and smartwatch sensor readings into activity logs. It generates logs nearly 10× as fast as the 70B baseline and can summarize two hours of observations in about four minutes on a Raspberry Pi 5.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1109/MASS66014.2025.00060">Paper</a></li>
+                <li><a href="https://arxiv.org/abs/2507.13737">arXiv</a></li>
+                <li><a href="https://gdfwj.github.io/DailyLLM/">Project</a></li>
+                <li><a href="https://github.com/gdfwj/DailyLLM">Code</a></li>
+                <li><a href="https://huggingface.co/datasets/YeTianCS/DailyLLMDataset">Dataset</a></li>
+              </ul>
+            </div>
+          </article>
 
+          <article class="publication" id="paper-contextllm">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_ContexLLM.jpg" aria-label="Enlarge figure for Fine-grained Contextualized Activity Logs Generation based on Multi-Modal Sensor Data and LLM">
+              <img src="images/Paper_ContexLLM.jpg" width="1098" height="576" loading="lazy" decoding="async" alt="ContextLLM converts spatial, motion, environmental, and physiological features into activity logs.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1145/3715014.3724031">Fine-grained Contextualized Activity Logs Generation based on Multi-Modal Sensor Data and LLM</a></h4>
+              <p class="publication-authors"><strong>Ye Tian</strong>, Onat Gungor, Xiaofan Yu, Tajana Rosing</p>
+              <p class="publication-venue">ACM SenSys 2025 · Poster</p>
+              <p class="publication-summary">ContextLLM aligns mobile and wearable sensor signals and translates them into prompts for a language model that writes fine-grained activity logs.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1145/3715014.3724031">Paper</a></li>
+              </ul>
+            </div>
+          </article>
 
-<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_KLDrive.jpg" class="img-thumbnail img-responsive">
+          <article class="publication" id="paper-foodcha">
+            <a class="publication-figure image-popup-no-margins" href="images/foodcha.webp" aria-label="Enlarge figure for FoodCHA: Multi-Modal LLM Agent for Fine-Grained Food Analysis">
+              <img src="images/foodcha.webp" width="1450" height="696" loading="lazy" decoding="async" alt="FoodCHA uses a meal image to infer a food category, subcategory, and cooking style.">
             </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">KLDrive: Knowledge Graph-Grounded LLMs for Fine-Grained 3D Scene Reasoning in Autonomous Driving</div>
-            <div class="author"><b>Ye Tian</b>, Jingyi Zhang, Zihao Wang, Xiaoyuan Ren, Xiaofan Yu, Onat Gungor, Tajana Rosing</div>
-            <div class="conf">The 41st Annual AAAI Conference on Artificial Intelligence <b>(AAAI under review)</b>, 2027</div>
-            <div>
-              [
-              <a href="https://arxiv.org/pdf/2603.21029" target="_blank">paper</a> 
-              ]
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1109/ISNCC70543.2026.11693901">FoodCHA: Multi-Modal LLM Agent for Fine-Grained Food Analysis</a></h4>
+              <p class="publication-authors">Woojin Lee, Pranav Mekkoth, <strong>Ye Tian</strong>, Onat Gungor, Tajana Rosing</p>
+              <p class="publication-venue">IEEE ISNCC 2026</p>
+              <p class="publication-summary">FoodCHA uses a compact vision-language model to identify a dish in stages, grounding fine-grained food and cooking-style predictions in the broader food category.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1109/ISNCC70543.2026.11693901">Paper</a></li>
+                <li><a href="https://arxiv.org/abs/2605.05499">arXiv</a></li>
+              </ul>
             </div>
-            <div class="tag">
-              <span class="label label-warning">LLM</span>
-			  <span class="label label-success">Automatic drive</span>
-			  <span class="label label-primary">Knowledge graph</span>
-            </div>
-          </div>
-</div>
+          </article>
 
-<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_DroneFL.jpg" class="img-thumbnail img-responsive">
+          <article class="publication" id="paper-egopva">
+            <a class="publication-figure image-popup-no-margins" href="images/egopva-overview.webp" aria-label="Enlarge figure for EgoPVA: When and Where Must We Look? Benchmarking Precise Visual Attention on Egocentric AI Glasses">
+              <img src="images/egopva-examples.webp" width="753" height="286" loading="lazy" decoding="async" alt="First-person examples of precise visual attention and the two-stage detection and localization task.">
             </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">DroneFL: Federated Learning for Multi-UAV Visual Target Tracking</div>
-            <div class="author">Xiaofan Yu, Yuwei Wu, Katherine Mao, <b>Ye Tian</b>, Vijay Kumar, Tajana Rosing</div>
-            <div class="conf">The IEEE Transactions on Automation Science and Engineering <b>(T-ASE under review)</b>, 2027</div>
-            <div>
-              [
-              <a href="https://arxiv.org/pdf/2509.21523" target="_blank">paper</a> 
-              ]
+            <div class="publication-body">
+              <h4>EgoPVA: When and Where Must We Look? Benchmarking Precise Visual Attention on Egocentric AI Glasses</h4>
+              <p class="publication-authors">Yuhong Zhang, <strong>Ye Tian</strong>, Guanhua Chen, Anthony L. Hu, Tiantian Xie, Ci-Jun Gao, Elina Wang, Jie Cui, Yuchen Xu, Lalith Kumar Sree Datta Sasubilli, Ying Choon Wu, Derek F. Wong, Tajana Rosing, Gert Cauwenberghs, Tzyy-Ping Jung</p>
+              <p class="publication-venue">Manuscript</p>
+              <p class="publication-summary">EgoPVA evaluates whether a vision-language model can identify the steps that require close inspection and pinpoint the object detail the wearer needs to see.</p>
             </div>
-            <div class="tag">
-              <span class="label label-danger">Multi-robot systems</span>
-			  <span class="label label-success">Federated learning</span>
-            </div>
-          </div>
-	</div>
-				
-<h4>(iii) Efficient training and inference on resource-constrained devices</h4>
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_FHDnn.jpg" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">Federated Hyperdimensional Computing: Comprehensive Analysis and Robust Communication</div>
-            <div class="author"><b>Ye Tian*</b>, Rishikanth Chandrasekaran*, Kazim Ergun*, Xiaofan Yu, Tajana Rosing (* indicates equal contribution)</div>
-            <div class="conf">ACM Transactions on Internet of Things <b>(TIOT)</b>, 2025</div>
-            <div>
-              [
-              <a href="https://dl.acm.org/doi/10.1145/3724129" target="_blank">Paper</a> 
-              ]
-            </div>
-            <div class="tag">
-			 <span class="label label-warning">Hyperdimensional computing</span>
-            <span class="label label-success">Federated learning</span>         
-            </div>
-          </div>
-	</div>
-	
-	
+          </article>
+        </section>
 
-    <div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_hyperLidar.jpg" class="img-thumbnail img-responsive">
+        <section class="publication-group" id="pub-spatial" aria-labelledby="title-spatial">
+          <h3 id="title-spatial">3D Perception &amp; Spatial Reasoning</h3>
+          <article class="publication" id="paper-kroma" data-highlight>
+            <a class="publication-figure image-popup-no-margins" href="images/kroma-overview.webp" aria-label="Enlarge figure for KROMA: Knowledge-Retaining Online Multimodal Adaptation for 3D Object Detection in Changing Driving Conditions">
+              <img src="images/kroma-context-reuse.webp" width="793" height="366" loading="lazy" decoding="async" alt="Camera, LiDAR, and radar observations feed context discovery, detector adaptation, and selective state retention.">
             </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">HyperLiDAR: Adaptive Post-Deployment LiDAR Segmentation via Hyperdimensional Computing</div>
-            <div class="author">Ivannia Gomez Moreno*, Yi Yao*, <b>Ye Tian*</b>, Xiaofan Yu, Flavio Ponzina, Jingyi Zhang, Michael Sullivan, Mingyu Yang, Hun Seok Kim and Tajana Rosing (* indicates equal contribution)</div>
-            <div class="conf">The Chips to Systems Conference <b>(DAC)</b>, 2026</div>
-            <div>
-              [
-              <a href="https://arxiv.org/pdf/2604.12331" target="_blank">Paper</a> |
-			  <a href="https://www.nuscenes.org/" target="_blank">Dataset 1</a> |
-			  <a href="https://semantic-kitti.org/" target="_blank">Dataset 2</a> |
-			  <a href="" target="_blank">Code</a> 
-              ]
+            <div class="publication-body">
+              <h4>KROMA: Knowledge-Retaining Online Multimodal Adaptation for 3D Object Detection in Changing Driving Conditions</h4>
+              <p class="publication-authors"><strong>Ye Tian</strong>, Md Mizanur Rahaman Nayan, Quanling Zhao, Tianqi Zhang, Flavio Ponzina, Azad Naeemi, Tajana Rosing</p>
+              <p class="publication-venue">Manuscript</p>
+              <p class="publication-summary">KROMA adapts a camera–LiDAR–radar detector as weather, roads, and lighting change. Retrieving earlier detector states when a context returns improved 3D average precision at IoU 0.5 by 9.92 percentage points over the strongest baseline across ten K-Radar driving conditions.</p>
             </div>
-            <div class="tag">
-              <span class="label label-warning">Hyperdimensional computing</span>
-			  <span class="label label-success">LiDAR segmentation</span>
-            </div>
-          </div>
-	</div>
-				
-<h4>(iv) Secure and efficient communication on Internet of Things devices</h4>
-				
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_WordWhisper.jpg" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">WordWhisper: Exploiting Real-time, Hardware-dependent IoT Communication against Eavesdropping</div>
-            <div class="author">Junyang Zhang, Jiahui Hou, <b>Ye Tian</b> and Xiang-Yang Li</div>
-            <div class="conf">IEEE Transactions on Mobile Computing <b>(TMC)</b>, 2024</div>
-            <div>
-              [
-              <a href="https://ieeexplore.ieee.org/document/10636770" target="_blank">Paper</a> 
-              ]
-            </div>
-            <div class="tag">
-              <span class="label label-primary">Embedded system</span>
-			   <span class="label label-danger">IoT security</span>
-            </div>
-          </div>
-	</div>
+          </article>
 
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_MultiRider.jpg" class="img-thumbnail img-responsive">
+          <article class="publication" id="paper-kldrive" data-highlight>
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_KLDrive.jpg" aria-label="Enlarge figure for KLDrive: Fine-Grained 3D Scene Reasoning for Autonomous Driving based on Knowledge Graph">
+              <img src="images/Paper_KLDrive.jpg" width="714" height="524" loading="lazy" decoding="async" alt="KLDrive combines multi-view cameras and LiDAR into a scene graph for a tool-using language model.">
             </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">MultiRider: Taming In-band Interferences in OFDM Backscatter for Parallel Communication</div>
-            <div class="author">Shanyue Wang, Yubo Yan, Feiyu Han, <b>Ye Tian</b>, Yuxin Ding, Panlong Yang and Xiang-Yang Li</div>
-            <div class="conf">ACM International Conference on Mobile Systems <b>(MobiSys)</b>, 2024</div>
-            <div>
-              [
-              <a href="https://dl.acm.org/doi/10.1145/3643832.3661862" target="_blank">Paper</a>  
-              ]
+            <div class="publication-body">
+              <h4><a href="https://arxiv.org/abs/2603.21029">KLDrive: Fine-Grained 3D Scene Reasoning for Autonomous Driving based on Knowledge Graph</a></h4>
+              <p class="publication-authors"><strong>Ye Tian</strong>, Jingyi Zhang, Zihao Wang, Xiaoyuan Ren, Xiaofan Yu, Onat Gungor, Tajana Rosing</p>
+              <p class="publication-venue">arXiv preprint · 2026</p>
+              <p class="publication-summary">KLDrive reconciles camera and LiDAR observations across frames to build a scene graph. A language agent queries the graph to answer spatial questions, reaching 65.04% overall accuracy on NuScenes-QA and a SPICE score of 42.45 on GVQA.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://arxiv.org/abs/2603.21029">Paper</a></li>
+              </ul>
             </div>
-            <div class="tag">
-              <span class="label label-primary">Embedded system</span>
-			 <span class="label label-danger">IoT communication</span>
-            </div>
-          </div>
-	</div>
-	<h4>(v) Sensing and interaction with mobile computing</h4>
-		
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%" src="./images/Paper_BackLip.jpg" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">BackLip: Passphrase-Independent Lip-reading User Authentication with Backscatter Signals</div>
-            <div class="author"><b>Ye Tian</b>, Hao Zhou, Haohua Du, Chenren Xu, Jiahui Hou, Dong Ren and Xiang-Yang Li</div>
-            <div class="conf">IEEE/ACM International Symposium on Quality of Service <b>(IWQoS)</b>, 2023</div>
-            <div>
-              [
-              <a href="https://ieeexplore.ieee.org/document/10188767" target="_blank">paper</a> 
-          ]
-            </div>
-            <div class="tag">
-            <span class="label label-primary">Embedded system</span>
-			 <span class="label label-danger">IoT interaction</span>
-            </div>
-          </div>
-	</div>
-		
-	<div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins">
-              <img width="100%"  src="images/Paper_Mudra.jpg" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">Mudra: A Multi-Modal Smartwatch Interactive System with Hand Gesture Recognition and User Identification</div>
-            <div class="author">Kaiwen Guo, Hao Zhou, <b>Ye Tian</b>, Wangqiu Zhou, Yusheng Ji and Xiang-Yang Li</div>
-            <div class="conf">IEEE International Conference on Computer Communications <b>(INFOCOM)</b>, 2022</div>
-            <div>
-              [
-              <a href="https://ieeexplore.ieee.org/document/9796879/" target="_blank">Paper</a> 
-              ]
-            </div>
-            <div class="tag">
-              <span class="label label-primary">Embedded system</span>
-			 <span class="label label-danger">IoT interaction</span>
-            </div>
-          </div>
-	</div>
-    </section> <!-- end of Projects -->
+          </article>
 
+          <article class="publication" id="paper-dronefl">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_DroneFL.jpg" aria-label="Enlarge figure for DroneFL: Federated Learning for Multi-UAV Visual Target Tracking">
+              <img src="images/Paper_DroneFL.jpg" width="1014" height="638" loading="lazy" decoding="async" alt="Several drones observe moving targets from different viewpoints and share model updates.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://arxiv.org/abs/2509.21523">DroneFL: Federated Learning for Multi-UAV Visual Target Tracking</a></h4>
+              <p class="publication-authors">Xiaofan Yu, Yuwei Wu, Katherine Mao, <strong>Ye Tian</strong>, Vijay Kumar, Tajana Rosing</p>
+              <p class="publication-venue">arXiv preprint · 2025</p>
+              <p class="publication-summary">DroneFL trains a shared trajectory predictor across drones with different viewpoints, using position-invariant motion features and altitude-aware normalization.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://arxiv.org/abs/2509.21523">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="publication-group" id="pub-systems" aria-labelledby="title-systems">
+          <h3 id="title-systems">Efficient Learning &amp; Inference Systems</h3>
+          <article class="publication" id="paper-hyperlidar" data-highlight>
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_hyperLidar.jpg" aria-label="Enlarge figure for HyperLiDAR: Adaptive Post-Deployment LiDAR Segmentation via Hyperdimensional Computing">
+              <img src="images/Paper_hyperLidar.jpg" width="1096" height="436" loading="lazy" decoding="async" alt="A LiDAR segmentation model adapts after deployment using selected point features and hyperdimensional class representations.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1145/3770743.3804248">HyperLiDAR: Adaptive Post-Deployment LiDAR Segmentation via Hyperdimensional Computing</a></h4>
+              <p class="publication-authors">Ivannia Gomez Moreno<sup>*</sup>, Yi Yao<sup>*</sup>, <strong>Ye Tian</strong><sup>*</sup>, Xiaofan Yu, Flavio Ponzina, Michael Sullivan, Jingyi Zhang, Mingyu Yang, Hun Seok Kim, Tajana Rosing</p>
+              <p class="publication-venue">ACM/IEEE DAC 2026</p>
+              <p class="publication-summary">HyperLiDAR updates a lightweight LiDAR segmentation model on-device by prioritizing points that are difficult to classify. Selecting informative points from each scan yielded up to a 13.8× retraining speedup over the evaluated baselines.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1145/3770743.3804248">Paper</a></li>
+                <li><a href="https://arxiv.org/abs/2604.12331">arXiv</a></li>
+                <li><a href="https://github.com/yiy054/HyperLidar">Code</a></li>
+                <li><a href="https://www.nuscenes.org/">nuScenes</a></li>
+                <li><a href="https://semantic-kitti.org/">SemanticKITTI</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication" id="paper-ledge" data-highlight>
+            <a class="publication-figure image-popup-no-margins" href="images/ledge.webp" aria-label="Enlarge figure for LEDGE: An Efficient Simulator for Distributed LLM Serving on Heterogeneous Edge Devices">
+              <img src="images/ledge.webp" width="1111" height="750" loading="lazy" decoding="async" alt="LEDGE models distributed serving across device placement, request routing, and shared network links.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://arxiv.org/abs/2611.24085">LEDGE: An Efficient Simulator for Distributed LLM Serving on Heterogeneous Edge Devices</a></h4>
+              <p class="publication-authors">Zihao Wang, <strong>Ye Tian</strong>, Tajana Rosing, Nalini Venkatasubramanian</p>
+              <p class="publication-venue">arXiv preprint · 2026</p>
+              <p class="publication-summary">LEDGE predicts serving latency across heterogeneous edge devices by modeling how computation and network transfers interact. On Qwen deployments it achieved under 3.6% request-level latency error (MAPE), and simulation was 135.3× faster in aggregate than running inference on hardware.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://arxiv.org/abs/2611.24085">Paper</a></li>
+                <li><a href="https://github.com/gdfwj/LEDGE">Code</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication" id="paper-fhdnn">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_FHDnn.jpg" aria-label="Enlarge figure for Federated Hyperdimensional Computing: Comprehensive Analysis and Robust Communication">
+              <img src="images/Paper_FHDnn.jpg" width="990" height="574" loading="lazy" decoding="async" alt="Federated clients learn local class representations and share encoded updates with a central model.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1145/3724129">Federated Hyperdimensional Computing: Comprehensive Analysis and Robust Communication</a></h4>
+              <p class="publication-authors"><strong>Ye Tian</strong><sup>*</sup>, Rishikanth Chandrasekaran<sup>*</sup>, Kazim Ergun<sup>*</sup>, Xiaofan Yu, Tajana Rosing</p>
+              <p class="publication-venue">ACM Transactions on Internet of Things · 2025</p>
+              <p class="publication-summary">FHDnn trains class prototypes from pretrained features and compresses updates to one bit per component to reduce communication between federated clients.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1145/3724129">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication" id="paper-suphdc">
+            <a class="publication-figure image-popup-no-margins" href="images/suphdc.webp" aria-label="Enlarge figure for Superposed Inference for Hyperdimensional Computing">
+              <img src="images/suphdc.webp" width="1520" height="414" loading="lazy" decoding="async" alt="Slot keys combine several queries into a shared encoding. The chart compares encoding and other inference costs.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://arxiv.org/abs/2609.32320">Superposed Inference for Hyperdimensional Computing</a></h4>
+              <p class="publication-authors">Quanling Zhao, Nilesh Prasad Pandey, <strong>Ye Tian</strong>, Tajana Rosing</p>
+              <p class="publication-venue">arXiv preprint · 2026</p>
+              <p class="publication-summary">SupHDC shares one projection across multiple queries and uses a separate classifier for each slot. On a Raspberry Pi 5 it ran about twice as fast as batched HDC, with a 2.26 percentage-point drop in mean accuracy.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://arxiv.org/abs/2609.32320">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication" id="paper-rgld">
+            <a class="publication-figure image-popup-no-margins" href="images/rgld.webp" aria-label="Enlarge figure for RGLD: Randomized Global-Local Density Estimation for Tabular Anomaly Detection">
+              <img src="images/rgld.webp" width="1407" height="485" loading="lazy" decoding="async" alt="Random feature subsets are scored by global density and local neighbors, then combined into an anomaly ranking.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://arxiv.org/abs/2606.28970">RGLD: Randomized Global-Local Density Estimation for Tabular Anomaly Detection</a></h4>
+              <p class="publication-authors">Quanling Zhao, Jiaying Yang, <strong>Ye Tian</strong>, Josh Victoria, Zhijun Wang, Pietro Mercati, Onat Gungor, Tajana Rosing</p>
+              <p class="publication-venue">arXiv preprint · 2026</p>
+              <p class="publication-summary">RGLD combines a global density estimate with local neighbor evidence across random feature subsets to score anomalies in tabular data.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://arxiv.org/abs/2606.28970">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="publication-group" id="pub-sensing" aria-labelledby="title-sensing">
+          <h3 id="title-sensing">Multimodal Sensing &amp; Embedded Intelligence</h3>
+          <article class="publication" id="paper-backlip">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_BackLip.jpg" aria-label="Enlarge figure for BackLip: Passphrase-Independent Lip-reading User Authentication with Backscatter Signals">
+              <img src="images/Paper_BackLip.jpg" width="656" height="502" loading="lazy" decoding="async" alt="BackLip measures the backscatter signal reflected by a speaker’s lip movements.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1109/IWQOS57198.2023.10188767">BackLip: Passphrase-Independent Lip-reading User Authentication with Backscatter Signals</a></h4>
+              <p class="publication-authors"><strong>Ye Tian</strong>, Hao Zhou, Haohua Du, Chenren Xu, Jiahui Hou, Dong Ren, Xiang-Yang Li</p>
+              <p class="publication-venue">IEEE/ACM IWQoS 2023</p>
+              <p class="publication-summary">BackLip uses backscatter measurements of lip movements to authenticate a speaker across different passphrases.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1109/IWQOS57198.2023.10188767">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication" id="paper-mudra">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_Mudra.jpg" aria-label="Enlarge figure for Mudra: A Multi-Modal Smartwatch Interactive System with Hand Gesture Recognition and User Identification">
+              <img src="images/Paper_Mudra.jpg" width="628" height="446" loading="lazy" decoding="async" alt="A participant demonstrates the Mudra smartwatch gesture interface.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1109/INFOCOM48880.2022.9796879">Mudra: A Multi-Modal Smartwatch Interactive System with Hand Gesture Recognition and User Identification</a></h4>
+              <p class="publication-authors">Kaiwen Guo, Hao Zhou, <strong>Ye Tian</strong>, Wangqiu Zhou, Yusheng Ji, Xiang-Yang Li</p>
+              <p class="publication-venue">IEEE INFOCOM 2022</p>
+              <p class="publication-summary">A multimodal smartwatch interface recognizes hand gestures and identifies the person performing them.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1109/INFOCOM48880.2022.9796879">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication" id="paper-multirider">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_MultiRider.jpg" aria-label="Enlarge figure for MultiRider: Enabling Multi-Tag Concurrent OFDM Backscatter by Taming In-band Interference">
+              <img src="images/Paper_MultiRider.jpg" width="732" height="336" loading="lazy" decoding="async" alt="OFDM subcarrier allocation for concurrent backscatter transmissions from multiple tags.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1145/3643832.3661862">MultiRider: Enabling Multi-Tag Concurrent OFDM Backscatter by Taming In-band Interference</a></h4>
+              <p class="publication-authors">Shanyue Wang, Yubo Yan, Feiyu Han, <strong>Ye Tian</strong>, Yuxin Ding, Panlong Yang, Xiang-Yang Li</p>
+              <p class="publication-venue">ACM MobiSys 2024</p>
+              <p class="publication-summary">MultiRider manages in-band interference so multiple backscatter tags can transmit concurrently over an OFDM signal.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1145/3643832.3661862">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication" id="paper-wordwhisper">
+            <a class="publication-figure image-popup-no-margins" href="images/Paper_WordWhisper.jpg" aria-label="Enlarge figure for WordWhisper: Exploiting Real-Time, Hardware-Dependent IoT Communication Against Eavesdropping">
+              <img src="images/Paper_WordWhisper.jpg" width="990" height="718" loading="lazy" decoding="async" alt="Enrollment and communication stages for a device-specific physical channel.">
+            </a>
+            <div class="publication-body">
+              <h4><a href="https://doi.org/10.1109/TMC.2024.3443333">WordWhisper: Exploiting Real-Time, Hardware-Dependent IoT Communication Against Eavesdropping</a></h4>
+              <p class="publication-authors">Junyang Zhang, Jiahui Hou, <strong>Ye Tian</strong>, Xiang-Yang Li</p>
+              <p class="publication-venue">IEEE Transactions on Mobile Computing · 2025</p>
+              <p class="publication-summary">WordWhisper uses device-specific responses in a speaker-to-gyroscope channel to communicate with an intended receiver.</p>
+              <ul class="paper-links" aria-label="Paper resources">
+                <li><a href="https://doi.org/10.1109/TMC.2024.3443333">Paper</a></li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
 
     <section id="awards" class="awards-section">
       <div class="container">
@@ -477,22 +495,22 @@
         <div class="spacer"></div>
            
          <ul>
-		 <li><span class="glyphicon"></span>TILOS Industrial Day, Best Poster Award (top 3), -2025</li>
-		 <li><span class="glyphicon"></span>UCSD CSE Fellowship, -2024</li>
-		 <li><span class="glyphicon"></span>National Fellowship (top 1%), -2024</li>
-         <li><span class="glyphicon"></span>Outstanding Student Leader in Graduate Student Union, -2022, 2021</li>
-		 <li><span class="glyphicon"></span>Outstanding Graduates of the Whole University (top: 2%), -2021</li>
-		 <li><span class="glyphicon"></span>International Mathematical Contest in Modeling - Honorable Mention Award, -2021</li>
-		 <li><span class="glyphicon"></span>Lixin Tang Fellowship（top: 0.2%), -2020</li>
-		<li><span class="glyphicon"></span>National Encouragement Fellowship（top: 3%), -2020, 2019, 2018</li>
-		<li><span class="glyphicon"></span>First Class Fellowship, -2020/2019/2018</li>
-		<li><span class="glyphicon"></span>One of the 100 Campus Stars - Top Ten Scientific Research Stars （top: 0.5%), -2020</li>
-		<li><span class="glyphicon"></span>Outstanding Students and Student Leader, -2020, 2019, 2018</li>
-		<li><span class="glyphicon"></span>Forestry Innovation and Entrepreneurship Competition - National Semi-Finalist Award, -2020</li>
-		<li><span class="glyphicon"></span>Outstanding Representative of Innovation and Entrepreneurship （top: 0.2%), -2020</li>
-		<li><span class="glyphicon"></span>College Students Three Innovation Challenge - Provincial Second Prize, -2019</li>
-		<li><span class="glyphicon"></span>"Internet +" College Student Competition - Gold Award, -2019</li>
-		<li><span class="glyphicon"></span>Outstanding Representative of Social Practice, -2018</li>
+		 <li>TILOS Industrial Day, Best Poster Award (top 3), 2025</li>
+		 <li>UCSD CSE Fellowship, 2024</li>
+		 <li>National Fellowship (top 1%), 2023</li>
+         <li>Outstanding Student Leader in Graduate Student Union, 2022, 2021</li>
+		 <li>Outstanding Graduates of the Whole University (top 2%), 2021</li>
+		 <li>International Mathematical Contest in Modeling - Honorable Mention Award, 2021</li>
+		 <li>Lixin Tang Fellowship (top 0.2%), 2020</li>
+		<li>National Encouragement Fellowship (top 3%), 2020, 2019, 2018</li>
+		<li>First Class Fellowship, 2020, 2019, 2018</li>
+		<li>One of the 100 Campus Stars - Top Ten Scientific Research Stars (top 0.5%), 2020</li>
+		<li>Outstanding Students and Student Leader, 2020, 2019, 2018</li>
+		<li>Forestry Innovation and Entrepreneurship Competition - National Semi-Finalist Award, 2020</li>
+		<li>Outstanding Representative of Innovation and Entrepreneurship (top 0.2%), 2020</li>
+		<li>College Students Three Innovation Challenge - Provincial Second Prize, 2019</li>
+		<li>"Internet +" College Student Competition - Gold Award, 2019</li>
+		<li>Outstanding Representative of Social Practice, 2018</li>
          </ul>
          </div>
          </div>
@@ -508,9 +526,9 @@
 		
 		<div class="row item">
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="https://ucsd.edu/" target="_blank">
-			  <img src="images/UCSD_logo.png" width="80" class="img-responsive edu-img">
-			  <img src="images/UCSD_logo2.png" width = "140" class="img-responsive edu-img">
+            <a href="https://ucsd.edu/" aria-label="University of California San Diego">
+			  <img src="images/UCSD_logo.png" width="80" class="img-responsive edu-img" alt="">
+			  <img src="images/UCSD_logo2.png" width = "140" class="img-responsive edu-img" alt="">
             </a>
           </div>
           <div class="col-md-8 col-sm-6 col-xs-12 item-info">
@@ -527,8 +545,8 @@
 
         <div class="row item">
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="https://en.ustc.edu.cn/" target="_blank">
-              <img src="images/USTC_logo.jpg" class="img-responsive edu-img">
+            <a href="https://en.ustc.edu.cn/" aria-label="University of Science and Technology of China">
+              <img src="images/USTC_logo.jpg" class="img-responsive edu-img" alt="">
             </a>
           </div>
           <div class="col-md-8 col-sm-6 col-xs-12 item-info">
@@ -569,32 +587,17 @@
       </div> <!-- end of Miscellaneous -->
     </section>
 
-    <div class="footer">
+    </main>
+    <footer class="footer">
       <div class="container">
-        <p>Copyright © Ye Tian 2025</p>
-        <p>Template from <a href="http://phoenix104104.github.io">Jason Lai</a></p>
-        <p class="last-update">
-          Last Updated: 
-          <script language="JavaScript">
-            document.write(document.lastModified);
-          </script>
-        </p>
+        <p>© 2026 Ye Tian <span aria-hidden="true">·</span> Template by <a href="https://phoenix104104.github.io/">Jason Lai</a></p>
+        <p class="last-update">Last updated <time datetime="2026-11-27">November 27, 2026</time></p>
       </div>
-    </div>
-
-
-    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    </footer>
+    <script src="js/jquery-1.11.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!--
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    -->
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
     <script src="js/mfp.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
