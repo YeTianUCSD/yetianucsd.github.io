@@ -1,44 +1,64 @@
-$(document).ready(function() {
+$(function () {
+  var section = document.getElementById('Publications');
+  var controls = section.querySelector('.publication-filter');
+  var buttons = controls.querySelectorAll('[data-view]');
+  var groups = section.querySelectorAll('.publication-group');
+  var papers = section.querySelectorAll('.publication');
+  var status = document.getElementById('publication-status');
 
-  $('.image-popup-vertical-fit').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile',
-    image: {
-      verticalFit: true
+  function setView(view) {
+    var visible = 0;
+    papers.forEach(function (paper) {
+      paper.hidden = view === 'highlights' && !paper.hasAttribute('data-highlight');
+      if (!paper.hidden) visible++;
+    });
+    groups.forEach(function (group) {
+      group.hidden = !group.querySelector('.publication:not([hidden])');
+    });
+    buttons.forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.dataset.view === view));
+    });
+    status.textContent = 'Showing ' + visible + ' of ' + papers.length + ' publications.';
+    $('body').scrollspy('refresh');
+  }
+
+  function revealFragment(hash) {
+    var target = document.getElementById(hash.slice(1));
+    if (target && section.contains(target) && target.closest('[hidden]')) {
+      setView('all');
+      return target;
     }
-    
+  }
+
+  buttons.forEach(function (button) {
+    var count = button.dataset.view === 'all' ? papers.length : section.querySelectorAll('[data-highlight]').length;
+    button.querySelector('.view-count').textContent = count;
+    button.addEventListener('click', function () {
+      setView(button.dataset.view);
+    });
   });
+  controls.hidden = false;
 
-  $('.image-popup-fit-width').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    image: {
-      verticalFit: false
-    }
+  // Reveal a hidden destination before the browser follows a local link.
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href^="#"]');
+    if (link) revealFragment(link.hash);
+  });
+  window.addEventListener('hashchange', function () {
+    var target = revealFragment(window.location.hash);
+    if (target) target.scrollIntoView();
   });
 
   $('.image-popup-no-margins').magnificPopup({
     type: 'image',
+    mainClass: 'mfp-no-margins',
     closeOnContentClick: true,
     closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
     image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
+      verticalFit: true,
+      titleSrc: function (item) {
+        return item.el.find('img').attr('alt');
+      }
     }
   });
-
-  $('.navbar-fixed-top').addClass('opaque');
-  $(window).scroll(function() {
-        if($(this).scrollTop() < 400) {
-            $('.navbar-fixed-top').addClass('opaque');
-      } else {
-            $('.navbar-fixed-top').removeClass('opaque');
-        }
-    });
 });
