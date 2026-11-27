@@ -308,6 +308,12 @@ main [id], #site-menu {
   font-weight: 600;
   letter-spacing: -.012em;
   text-wrap: balance;
+  align-self: stretch;
+  text-align: center;
+}
+
+.research-card .research-title-short {
+  font-size: clamp(20px, 9cqi, 28px);
 }
 
 .research-card h3 a {
@@ -319,6 +325,8 @@ main [id], #site-menu {
 }
 
 .research-projects {
+  align-self: stretch;
+  justify-content: center;
   column-gap: 10px;
   margin-top: auto;
   font-size: 15px;
